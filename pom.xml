@@ -21,16 +21,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-consul-config</artifactId>
+			<artifactId>spring-cloud-starter-config</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.cloud</groupId>-->
-<!--			<artifactId>spring-cloud-starter-config</artifactId>-->
-<!--		</dependency>-->
-<!--		<dependency>-->
-<!--			<groupId>org.springframework.boot</groupId>-->
-<!--			<artifactId>spring-boot-starter-actuator</artifactId>-->
-<!--		</dependency>-->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-webflux</artifactId>
@@ -74,7 +66,6 @@
 				<!-- Avoid a clash between Spring Boot repackaging and native-maven-plugin -->
 				<repackage.classifier>exec</repackage.classifier>
 
-				<native.buildtools.version>0.9.4</native.buildtools.version>
 			</properties>
 			<dependencies>
 				<!-- Won't be needed as of JUnit 5.8, see https://github.com/junit-team/junit5/issues/2619 -->
